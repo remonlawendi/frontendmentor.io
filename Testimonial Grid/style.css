@@ -1,0 +1,71 @@
+#root {
+    Moderate violet: hsl(263, 55%, 52%)
+    Very dark grayish blue: hsl(217, 19%, 35%)
+    Very dark blackish blue: hsl(219, 29%, 14%)
+    White: hsl(0, 0%, 100%)
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}  
+body {
+    background: #EDF2F8;
+}
+.grid-items{
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+#testimonials-grid-container {
+    padding: 5% 3%;
+}
+#testimonials-1 {
+    background: #733FC8;
+    color: #fff;
+}
+#testimonials-2 {
+    background: #49556B;
+    color: #fff;
+}
+#testimonials-3 {
+    background: #fff;  
+}
+#testimonials-4 {
+    background: #525661;
+    color: #fff;    
+}
+#testimonials-5 {
+    background: #fff; 
+}
+@media (min-width : 576px) {
+   #testimonials-grid-container {
+       display: flex;
+       margin: 0 auto;
+   }
+   #main-left {
+       flex-basis: 75%;
+       
+   }
+   #top {
+       display: flex;
+   } 
+   #testimonials-1,  #testimonials-4 {
+       flex-basis: 65%;
+   }
+   #testimonials-2,  #testimonials-3 {
+       flex-basis: 35%;
+   }
+   #testimonials-5 {
+       flex-basis: 25%;
+   }
+   #bottom {
+       display: flex;
+   } 
+
+}
